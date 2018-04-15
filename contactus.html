@@ -46,7 +46,9 @@
                     <img src="img/logo.png" alt="Ristorante con Fusion" class="img-fluid">
                 </div>
                 <div class="col col-sm-3 align-self-center">
-                    <a href="index.html#card" class="btn btn-warning btn-sm btn-block" role="button"> Reserve the table</a>
+                    <a href="index.html#card" class="btn btn-warning btn-sm btn-block"
+                    data-toggle="tooltip" data-html="true" title="or Call us at<br>
+                    <strong>+91 9321128068</strong>" data-placement="bottom" role="button"> Reserve the table</a>
                 </div>
             </div>
         </div>
@@ -210,6 +212,11 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
